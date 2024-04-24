@@ -1,6 +1,9 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -18,6 +21,7 @@ header {
     color: #FFF;
     padding: 20px 0;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -29,19 +33,20 @@ section {
 }
 
 h1, h2, h3 {
-    color: #333;
-    font-family: "Montserrat", sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    color: #4B4B4B;
 }
 
 p {
-    color: #555;
-    font-family: "Open Sans", sans-serif;
+    color: #777;
 }
 
 blockquote {
     background-color: #EAEAEA;
     padding: 20px;
     margin: 20px 0;
+    color: #555;
+    font-style: italic;
 }
 
 footer {
@@ -94,12 +99,16 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-    background-color: #7DB355;
+    background-color: #FFD700;
     color: #FFF;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFA500;
 }
 
 /* Image Grid Styles */
@@ -113,4 +122,99 @@ input[type="submit"] {
 .image-grid img {
     width: 100%;
     height: auto;
+}
+
+/* Specific Section Styles */
+.living-walls {
+    background-color: #CDE9CA;
+}
+
+.living, .walls {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.living img, .walls img {
+    margin-bottom: 10px;
+}
+
+/* Urban Examples Styles */
+.urban-examples {
+    background-color: #FFF;
+    padding: 40px 0;
+}
+
+.urban-examples h2 {
+    text-align: center;
+    color: #4B4B4B;
+}
+
+.urban-examples p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-grid img:hover {
+    filter: brightness(70%);
+    transition: filter 0.3s ease;
+}
+
+.image-grid .caption-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-grid img:hover .caption-overlay {
+    opacity: 1;
+}
+
+.image-grid .caption-overlay p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Footer Styles */
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
