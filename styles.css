@@ -25,7 +25,7 @@ header {
 }
 
 main {
-    background-color: #FFF;
+    background-color: #FFEB3B;
 }
 
 section {
@@ -38,7 +38,7 @@ h1, h2, h3 {
 }
 
 p {
-    color: #777;
+    color: #131313;
 }
 
 blockquote {
@@ -99,7 +99,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-    background-color: #FFD700;
+    background-color: #FF5722;
     color: #FFF;
     border: none;
     padding: 10px 20px;
@@ -126,7 +126,8 @@ input[type="submit"]:hover {
 
 /* Specific Section Styles */
 .living-walls {
-    background-color: #CDE9CA;
+    background-color: #4CAF50;
+   
 }
 
 .living, .walls {
